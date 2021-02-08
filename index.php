@@ -34,3 +34,53 @@
  *
  * 5. Créez une instance de Appartement et invoquez toutes les méthodes définies, y compris les setters ( dans index.php ).
  */
+
+require "./classes/Habitation.php";
+require "./classes/Maison.php";
+require "./classes/Appartement.php";
+
+$maison1 = new Maison("France", "Anor", 59186, 3, 7, true, 1, true);
+echo $maison1->getPays()."<br>";
+echo $maison1->getVille()."<br>";
+echo $maison1->getCodePostal()."<br>";
+echo $maison1->getChambres()."<br>";
+echo $maison1->getPieces()."<br>";
+echo $maison1->hasJardin()."<br>";
+echo $maison1->getEtages()."<br>";
+echo $maison1->hasGarage()."<br>";
+
+echo "<br><br>";
+
+$maison2 = new Maison("France", "Fourmies", 59610, 5, 10, true, 2, false);
+echo $maison2->getPays()."<br>";
+echo $maison2->getVille()."<br>";
+echo $maison2->getCodePostal()."<br>";
+echo $maison2->getChambres()."<br>";
+echo $maison2->getPieces()."<br>";
+echo $maison2->hasJardin()."<br>";
+echo $maison2->getEtages()."<br>";
+echo $maison2->hasGarage()."<br>";
+
+echo "<br><br>";
+
+$appart = new Appartement("France", "Wignehies", 59212, 4, 8, true);
+echo $appart->getPays()."<br>";
+echo $appart->getVille()."<br>";
+echo $appart->getCodePostal()."<br>";
+echo $appart->getChambres()."<br>";
+echo $appart->getPieces()."<br>";
+echo $appart->hasGarage()."<br>";
+
+echo $appart->setPays("France")."<br>";
+echo $appart->setVille("Vannes")."<br>";
+echo $appart->setCodePostal(59260)."<br>";
+echo $appart->setChambres(1)."<br>";
+echo $appart->setPieces(3)."<br>";
+echo $appart->setGarage(false)."<br>";
+
+echo $appart->getPays()."<br>";
+echo $appart->getVille()."<br>";
+echo $appart->getCodePostal()."<br>";
+echo $appart->getChambres()."<br>";
+echo $appart->getPieces()."<br>";
+echo $appart->hasGarage()."<br>";
